@@ -218,13 +218,12 @@ if page == "🏠  Home & Overview":
 
     col1, col2 = st.columns(2)
     with col1:
-        st.markdown('<div class="section-header">🎯 Problem Statement</div>', unsafe_allow_html=True)
+        st.markdown('<div class="section-header">Why This Dashboard?</div>', unsafe_allow_html=True)
         st.markdown("""
         <div class="info-card">
             <div class="info-card-body">
-            Tons of surplus food is discarded daily by restaurants, supermarkets,
-            and catering services while millions face food insecurity. There is no
-            structured platform connecting these two sides efficiently.<br><br>
+            Food wastage is a growing concern — tonnes of edible food are discarded daily while millions go without. Understanding where, when and why 
+            this happens is the first step toward fixing it..<br><br>
             To address this,
             <b style='color:#2ecc71;'>This dashboard analyses</b>
             food donation and claim data across multiple cities to uncover wastage patterns, identify the most active providers and 
@@ -234,7 +233,7 @@ if page == "🏠  Home & Overview":
         """, unsafe_allow_html=True)
 
     with col2:
-        st.markdown('<div class="section-header">🚀 Key Features</div>', unsafe_allow_html=True)
+        st.markdown('<div class="section-header">Key Features</div>', unsafe_allow_html=True)
         st.markdown("""
         <div class="info-card">
             <div class="info-card-body">
@@ -253,7 +252,7 @@ if page == "🏠  Home & Overview":
         """, unsafe_allow_html=True)
 
     st.markdown("<hr class='green-divider'>", unsafe_allow_html=True)
-    st.markdown('<div class="section-header">📦 Platform at a Glance</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-header">Data at a Glance</div>', unsafe_allow_html=True)
 
     c1, c2, c3, c4 = st.columns(4)
 
@@ -324,7 +323,7 @@ if page == "🏠  Home & Overview":
         """, unsafe_allow_html=True)
 
     st.markdown("<hr class='green-divider'>", unsafe_allow_html=True)
-    st.markdown('<div class="section-header">🔑 Key Findings</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-header">Key Findings</div>', unsafe_allow_html=True)
 
     findings = [
         ("","Top Provider","Barry Group leads with 5 successful completed claims and highest total quantity donated (179 units)"),
