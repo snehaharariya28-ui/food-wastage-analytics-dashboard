@@ -4,7 +4,7 @@ An interactive data analytics dashboard built using Python, SQL, SQLite, and Str
 
 ---
 
-## Live Application
+## Live Application 
 
 [Open Application](https://foodwastagemanagement-nxrsxyqlybvfv9dycnzaca.streamlit.app/)
 
