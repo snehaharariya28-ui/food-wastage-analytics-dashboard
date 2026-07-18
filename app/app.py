@@ -19,7 +19,7 @@ initialize_database()
 
 # ── Page Config ────────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="Food Wastage Management System",
+    page_title="Food Wastage Pattern Analysis",
     page_icon="🍱",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -162,9 +162,6 @@ with st.sidebar:
     st.markdown("""
     <div style='text-align:center; padding: 1.2rem 0 0.8rem 0;'>
         <div style='font-size:3rem;'>🍱</div>
-        <div style='font-size:1.05rem; font-weight:700; color:#2ecc71; margin-top:0.3rem;'>
-            Food Wastage MS
-        </div>
     </div>
     """, unsafe_allow_html=True)
 
@@ -188,8 +185,8 @@ if page == "🏠  Home & Overview":
 
     st.markdown("""
     <div class="hero-banner">
-        <div class="hero-title">🍱 Local Food Wastage Management System</div>
-        <div class="hero-subtitle">Bridging the gap between surplus food and those in need </div>
+        <div class="hero-title">🍱 Food Wastage Pattern Analysis</div>
+        <div class="hero-subtitle">Analyzing food surplus patterns to reduce wastage across cities </div>
         <div class="hero-tag">📍 Food Management · Waste Reduction · Social Good</div>
     </div>
     """, unsafe_allow_html=True)
@@ -228,10 +225,10 @@ if page == "🏠  Home & Overview":
             Tons of surplus food is discarded daily by restaurants, supermarkets,
             and catering services while millions face food insecurity. There is no
             structured platform connecting these two sides efficiently.<br><br>
-            This system solves that by creating a
-            <b style='color:#2ecc71;'>centralized food redistribution platform</b>
-            where providers list surplus food, receivers claim it, and every
-            transaction is tracked and analyzed.
+            To address this,
+            <b style='color:#2ecc71;'>This dashboard analyses</b>
+            food donation and claim data across multiple cities to uncover wastage patterns, identify the most active providers and 
+            receivers, and highlight areas where food distribution can be improved.
             </div>
         </div>
         """, unsafe_allow_html=True)
@@ -241,16 +238,16 @@ if page == "🏠  Home & Overview":
         st.markdown("""
         <div class="info-card">
             <div class="info-card-body">
-            <b style='color:#e6edf3;'>🤝 Connect Providers & Receivers</b>
-            — Surplus food reaches the right hands quickly<br><br>
-            <b style='color:#e6edf3;'>📍 Find Food Near You</b>
-            — Browse available food by city and food type<br><br>
-            <b style='color:#e6edf3;'>📊 Understand Wastage Patterns</b>
-            — See which areas, foods and times generate most surplus<br><br>
-            <b style='color:#e6edf3;'>⚡ Real-time Tracking</b>
-            — Every donation and claim is tracked instantly<br><br>
-            <b style='color:#e6edf3;'>🔔 Act Before Food Expires</b>
-            — Critical alerts for food items nearing expiry
+            <b style='color:#e6edf3;'>Analyse Donation Patterns</b>
+            — Explore which cities, food types and providers contribute the most<br><br>
+            <b style='color:#e6edf3;'>Understand Claim Behaviour</b>
+            — See how claims are distributed across completed, cancelled and pending status<br><br>
+            <b style='color:#e6edf3;'>Explore Food Trends</b>
+            — Identify which meal types and food categories generate the most surplus<br><br>
+            <b style='color:#e6edf3;'>Search and Filter Data</b>
+            — Find food listings by city, food type, meal type and provider type<br><br>
+            <b style='color:#e6edf3;'>Manage Food Listings</b>
+            — Add, update and remove food listings directly through the dashboard
             </div>
         </div>
         """, unsafe_allow_html=True)
@@ -330,12 +327,12 @@ if page == "🏠  Home & Overview":
     st.markdown('<div class="section-header">🔑 Key Findings</div>', unsafe_allow_html=True)
 
     findings = [
-        ("🏆","Top Provider","Barry Group leads with 5 successful completed claims and highest total quantity donated (179 units)"),
-        ("📍","Top Cities","South Kathryn & New Carol have the most food listings (6 each), driven by Restaurants and Supermarkets"),
-        ("🍚","Most Claimed Food","Rice is the most claimed food item (45 claims), followed by Dairy (43 claims)"),
-        ("⚠️","Cancellation Alert","33.6% of claims are cancelled — nearly equal to completions, signaling need for better follow-through"),
-        ("🌱","Food Type Leader","Vegan food has the highest total donated quantity (8,798 units) despite similar listing count"),
-        ("🍳","Meal Pattern","Breakfast is both the most listed AND most claimed meal type — highest surplus and demand"),
+        ("","Top Provider","Barry Group leads with 5 successful completed claims and highest total quantity donated (179 units)"),
+        ("","Top Cities","South Kathryn & New Carol have the most food listings (6 each), driven by Restaurants and Supermarkets"),
+        ("","Most Claimed Food","Rice is the most claimed food item (45 claims), followed by Dairy (43 claims)"),
+        ("","Cancellation Alert","33.6% of claims are cancelled — nearly equal to completions, signaling need for better follow-through"),
+        ("","Food Type Leader","Vegan food has the highest total donated quantity (8,798 units) despite similar listing count"),
+        ("","Meal Pattern","Breakfast is both the most listed AND most claimed meal type — highest surplus and demand"),
     ]
     col1, col2 = st.columns(2)
     for i,(icon,title,desc) in enumerate(findings):
